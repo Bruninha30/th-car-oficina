@@ -6,7 +6,7 @@ import "./App.css";
 import { isAdmin } from "./utils/auth";
 
 import Login from "./pages/Login";
-import SignUp from "./pages/SignUp"; // novo!
+//import SignUp from "./pages/SignUp"; // novo!
 import Clientes from "./pages/Clientes";
 import Veiculos from "./pages/Veiculos";
 import OrdemServico from "./pages/OrdemServico";
@@ -117,7 +117,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
-        <Route path="/cadastro" element={<SignUp />} />
+       
 
         {/* 👇 Redireciona para cadastro se não estiver logado */}
         <Route
