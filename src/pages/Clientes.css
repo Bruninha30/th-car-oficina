@@ -1,0 +1,88 @@
+.clientes-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-clientes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.form-clientes input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-clientes input:focus {
+  border-color: #0099ff;
+  outline: none;
+}
+
+.form-clientes button {
+  padding: 12px;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-clientes button:hover {
+  background-color: #007acc;
+}
+
+.lista-clientes {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-clientes li {
+  background-color: #f9f9f9;
+  border-left: 4px solid #0099ff;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-clientes li span {
+  display: block;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.lista-clientes button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 3px 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+}
+
+.lista-clientes button:hover {
+  background-color: #cc0000;
+}

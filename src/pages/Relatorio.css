@@ -1,0 +1,95 @@
+.relatorios-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+h2, h3 {
+  color: #222831;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.info-header img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+}
+
+.dados-empresa h3 {
+  margin: 0 0 8px 0;
+  color: #0e0e0e;
+}
+
+.dados-empresa p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.cards-relatorios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background-color: #c1c4c8;
+  padding: 18px 25px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+  text-align: center;
+  color: #222831;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #0a0a0a;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.btn-pdf {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #8bff1e;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pdf:hover {
+  background-color: #0b72d6;
+}

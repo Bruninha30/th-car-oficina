@@ -1,0 +1,146 @@
+/* Usuario.css */
+
+.usuario-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-container h1,
+.usuario-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.erro {
+  color: #d93025;
+  background: #fce8e6;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sucesso {
+  color: #188038;
+  background: #d7f3d3;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Formulário */
+
+.form-user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.form-user input,
+.form-user select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 20px;
+  min-width: 180px;
+  transition: border-color 0.3s ease;
+}
+
+.form-user input:disabled,
+.form-user select:disabled {
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.form-user input:focus,
+.form-user select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.25s ease;
+}
+
+.form-buttons button:disabled {
+  background-color: #a0c5ff;
+  cursor: not-allowed;
+}
+
+.form-buttons button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Tabela */
+
+.usuario-tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.usuario-tabela th,
+.usuario-tabela td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.usuario-tabela th {
+  background-color: #f0f0f0;
+  font-weight: 700;
+  color: #333;
+}
+
+.usuario-tabela tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.usuario-tabela tr:hover {
+  background-color: #f1faff;
+}
+
+.usuario-tabela button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 3px;
+  transition: color 0.2s ease;
+}
+
+.usuario-tabela button:hover {
+  color: #007bff;
+}
+
+.usuario-tabela button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}

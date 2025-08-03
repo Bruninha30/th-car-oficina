@@ -1,0 +1,104 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #eeefef; /* cinza escuro */
+  color: #e3c119; /* quase branco */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed; /* fixa a sidebar */
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.logo-img {
+  margin: 20px 10px 10px 40px;
+  width: 160px;
+  height: auto;
+  
+}
+
+
+
+.sidebar-links {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #020202;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link svg {
+  font-size: 1.4rem;
+  color: #114ea3; 
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #e9db24; 
+  color: #e0e7ff;
+}
+
+.link:hover svg {
+  color: #e0e7ff;
+}
+
+.link.active {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 700;
+}
+
+.link.active svg {
+  color: white;
+}
+
+.logout-button {
+  background-color: #ef4444;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.logout-button svg {
+  font-size: 1.3rem;
+}
+
+.logout-button:hover {
+  background-color: #dc2626; 
+}

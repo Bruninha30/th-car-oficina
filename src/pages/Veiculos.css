@@ -1,0 +1,132 @@
+/* Container principal */
+.container-veiculos {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Título */
+.container-veiculos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Formulário */
+.form-veiculo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-veiculo select,
+.form-veiculo input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form-veiculo select:focus,
+.form-veiculo input:focus {
+  border-color: #0a0a0a;
+  outline: none;
+}
+
+/* Botões */
+.form-veiculo button {
+  padding: 12px;
+  background-color: #2b84e9;
+  color: #a21414;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-veiculo button:hover {
+  background-color: #26b621;
+}
+
+/* Botão Cancelar */
+.form-veiculo button:last-child {
+  background-color: #f92b14;
+  color: #f6f3f3;
+  margin-top: 10px;
+}
+
+.form-veiculo button:last-child:hover {
+  background-color: #d1d5db;
+}
+
+/* Tabela */
+.tabela-veiculos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabela-veiculos th,
+.tabela-veiculos td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabela-veiculos th {
+  background-color: #f1dd2b;
+  color: #111827;
+}
+
+.tabela-veiculos tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.tabela-veiculos td button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tabela-veiculos td button:first-child {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.tabela-veiculos td button:first-child:hover {
+  background-color: #2563eb;
+}
+
+.tabela-veiculos td button:last-child {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.tabela-veiculos td button:last-child:hover {
+  background-color: #dc2626;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .form-veiculo {
+    gap: 10px;
+  }
+
+  .tabela-veiculos {
+    font-size: 14px;
+  }
+
+  .tabela-veiculos td button {
+    margin-bottom: 4px;
+  }
+}

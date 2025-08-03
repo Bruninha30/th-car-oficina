@@ -1,0 +1,41 @@
+.historico-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.historico-container h2 {
+  margin-bottom: 20px;
+}
+
+.tabela-historico {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-historico th,
+.tabela-historico td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabela-historico th {
+  background-color: #f3f3f3;
+}
+
+.tabela-historico tr:hover {
+  background-color: #f9f9f9;
+}
+
+.erro {
+  color: #e53935;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

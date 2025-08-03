@@ -1,0 +1,145 @@
+/* OrdemServico.css */
+
+.ordem-servico-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff0f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(255 182 193 / 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a1f4d;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #c72e74;
+}
+
+.form-ordem {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-ordem select,
+.form-ordem input[type="date"],
+.form-ordem input[type="number"],
+.form-ordem textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid #f95113;
+  font-size: 16px;
+  resize: vertical;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-ordem select:disabled,
+.form-ordem input:disabled,
+.form-ordem textarea:disabled {
+  background-color: #f5e5ec;
+  cursor: not-allowed;
+}
+
+.form-ordem select:focus,
+.form-ordem input:focus,
+.form-ordem textarea:focus {
+  border-color: #68c0e0;
+  outline: none;
+  box-shadow: 0 0 8px rgba(46, 130, 199, 0.5);
+}
+
+.form-ordem textarea {
+  min-height: 60px;
+  font-family: inherit;
+}
+
+.form-ordem button {
+  grid-column: span 2;
+  padding: 12px;
+  background-color: #2981aa;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+}
+
+.form-ordem button:hover {
+  background-color: #43a024;
+}
+
+.form-ordem button[type="button"] {
+  background-color: #888;
+  margin-left: 10px;
+}
+
+.form-ordem button[type="button"]:hover {
+  background-color: #555;
+}
+
+.tabela-ordens {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(255 182 193 / 0.3);
+}
+
+.tabela-ordens thead {
+  background-color: #c7bd2e;
+  color: white;
+  font-weight: 700;
+}
+
+.tabela-ordens th,
+.tabela-ordens td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #f3c5d0;
+  font-size: 15px;
+}
+
+.tabela-ordens tbody tr:hover {
+  background-color: #ffe5f0;
+}
+
+.tabela-ordens tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela-ordens button {
+  background-color: #fd0c0c;
+  border: none;
+  padding: 7px 10px;
+
+  margin: 3px 3px;
+  border-radius: 7px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+}
+
+.tabela-ordens button:hover {
+  background-color: #4ba3f1;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .form-ordem {
+    grid-template-columns: 1fr;
+  }
+  .form-ordem button {
+    grid-column: span 1;
+  }
+}

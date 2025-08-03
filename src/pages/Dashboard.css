@@ -1,0 +1,108 @@
+.dashboard {
+  margin-left: 100px; /* para respeitar o Sidebar fixo */
+  padding: 32px 48px;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* cinza claro suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937; /* cinza escuro */
+}
+
+.dashboard-header {
+  margin-bottom: 32px;
+  border-bottom: 2px solid #2563eb; /* azul */
+  padding-bottom: 16px;
+}
+
+.dashboard-header h1 {
+  font-weight: 800;
+  font-size: 32px;
+  color: #080808;
+}
+
+.dashboard-header p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #4b5563;
+}
+
+.status-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.card {
+  flex: 1 1 80px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #080808;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.3);
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #eb4d25;
+}
+
+.card p {
+  font-size: 36px;
+  font-weight: 800;
+  color: #fa1f1f;
+}
+
+.card.aberta {
+  
+  border-top: 4px solid #f39c12; 
+}
+
+.card.andamento {
+  border-top: 4px solid #1e90ff; 
+}
+
+.card.finalizada {
+  border-top: 4px solid #27ae60; 
+}
+
+.card.cliente {
+  border-top: 4px solid #ed0f0f; 
+}
+
+.card.veiculo {
+  border-top: 4px solid #0fed29; 
+}
+
+.grafico-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: space-between;
+}
+
+.grafico-box {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  flex: 1 1 320px;
+  min-width: 320px;
+}
+
+.grafico-box h2 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #070707;
+  margin-bottom: 20px;
+  user-select: none;
+}
